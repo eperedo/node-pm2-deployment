@@ -6,7 +6,7 @@ module.exports = {
 	apps: [
 		{
 			name: 'app-1',
-			script: 'src/index.js',
+			script: 'npm start',
 			env: {
 				COMMON_VARIABLE: 'true',
 			},
@@ -27,7 +27,7 @@ module.exports = {
 			repo: 'git@github.com:eperedo/node-pm2-deployment.git',
 			path: '/Users/eduardo/workspace/courses/node-pm2-deploy/www/app-1',
 			'post-deploy':
-				'npm install --production && pm2 startOrGracefulReload ecosystem.config.js',
+				'npm install --production && pm2 startOrGracefulReload ecosystem.config.js --update-env',
 		},
 	},
 };
