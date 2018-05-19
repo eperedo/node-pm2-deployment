@@ -7,6 +7,7 @@ require('dotenv').config({
 });
 
 console.log('REPO', process.env.repositories);
+console.log('REPO', process.env.DATABASE);
 
 const Hapi = require('hapi');
 
