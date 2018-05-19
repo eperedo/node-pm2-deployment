@@ -6,7 +6,7 @@ require('dotenv').config({
 	path: `${path.dirname(__dirname)}/.env`,
 });
 
-console.log(`${path.dirname(__dirname)}/.env`);
+console.log('REPO', process.env.repositories);
 
 const Hapi = require('hapi');
 
