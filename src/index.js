@@ -1,6 +1,13 @@
 'use strict';
 
-require('dotenv').config();
+const path = require('path');
+
+require('dotenv').config({
+	path: `${path.dirname(__dirname)}/src/.env`,
+});
+
+console.log(`${path.dirname(__dirname)}/src/.env`);
+
 const Hapi = require('hapi');
 
 const server = new Hapi.Server({
