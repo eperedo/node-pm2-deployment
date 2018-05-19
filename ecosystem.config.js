@@ -6,7 +6,7 @@ module.exports = {
 	apps: [
 		{
 			name: 'app-1',
-			script: 'npm start',
+			script: 'node -r dotenv/config src/index.js',
 			env: {
 				COMMON_VARIABLE: 'true',
 			},
