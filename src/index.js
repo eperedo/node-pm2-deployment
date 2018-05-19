@@ -3,10 +3,10 @@
 const path = require('path');
 
 require('dotenv').config({
-	path: `${path.dirname(__dirname)}/src/.env`,
+	path: `${path.dirname(__dirname)}/.env`,
 });
 
-console.log(`${path.dirname(__dirname)}/src/.env`);
+console.log(`${path.dirname(__dirname)}/.env`);
 
 const Hapi = require('hapi');
 
