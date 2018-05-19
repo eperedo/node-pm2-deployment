@@ -1,1 +1,4 @@
 node_modules
+ecosystem.config.js
+www
+.env
