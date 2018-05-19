@@ -6,9 +6,9 @@ module.exports = {
 	apps: [
 		{
 			name: 'app-1',
-			script: 'npm -- start',
+			script: 'src/index.js',
 			env: {
-				COMMON_VARIABLE: 'true',
+				PORT: 1500,
 			},
 			env_production: {
 				NODE_ENV: 'production',
